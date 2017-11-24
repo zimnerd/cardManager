@@ -26,7 +26,6 @@ class LatestBlogsController extends Controller
   public function index()
   {
 
-
     if (isset($_GET['id']))
     {
       //dd($_GET['id']);

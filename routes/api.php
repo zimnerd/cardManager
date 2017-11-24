@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -23,6 +24,9 @@ Route::middleware('auth:api')->get('/users', function () {
 
 Route::get('test', function () {
     return 'hello world';
+});
+Route::get('/api/user', function () {
+    return  Encore\Admin\Facades\Admin::user();
 });
 
 Route::get('parameters', function (Request $request) {

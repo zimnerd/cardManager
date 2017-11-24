@@ -28,6 +28,7 @@ Route::group([
         'movies/in-theaters'    => Movies\InTheaterController::class,
         'movies/coming-soon'    => Movies\ComingSoonController::class,
         'movies/top250'         => Movies\Top250Controller::class,
+        'blogs/latestblog'      => Blogs\LatestBlogsController::class,
 
         'world/country'         => World\CountryController::class,
         'world/city'            => World\CityController::class,

@@ -17,7 +17,6 @@ class InTheater extends Model
         $start = ($page-1)*$perPage;
 
         $data = file_get_contents("https://api.douban.com/v2/movie/in_theaters?city=上海&start=$start&count=$perPage");
-
         $data = json_decode($data, true);
 
         extract($data);
